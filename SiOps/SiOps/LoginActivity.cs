@@ -21,13 +21,33 @@ namespace SiOps {
 
             // Get object from layout resource
             Button button = FindViewById<Button>(Resource.Id.btnLogin);
+            EditText textUsername = FindViewById<EditText>(Resource.Id.txtUser);
+            EditText textPassword = FindViewById<EditText>(Resource.Id.txtPassword);
 
-            //Code
-            //Go to Menu
+            //Code:            
+            //Button - Login
             button.Click += delegate {
-                StartActivity(typeof(MenuActivity));
+                //Validate if all fields are filled
+                if ((textUsername.Text != String.Empty) && (textPassword.Text != String.Empty)) {
+                    //TODO: Validate if Username exists and if it does,
+                    //TODO: validate if the inserted password is valid according to the data in the data base
+                    StartActivity(typeof(MenuActivity));
+                } else {
+                    if (textUsername.Text == String.Empty && textPassword.Text == String.Empty) {
+                        // Toast -- To notify in case all fields are empty
+                        Toast.MakeText(this.BaseContext, "Os campos têm de estar preenchidos.", ToastLength.Short).Show();
+                    }
+                    else if (textUsername.Text == String.Empty && textPassword.Text != String.Empty) {
+                        // Toast -- To notify in case Username is empty
+                        Toast.MakeText(this.BaseContext, "O campo Utilizador tem de ser preenchido.", ToastLength.Short).Show();
+                    }
+                    else if (textPassword.Text == String.Empty && textUsername.Text != String.Empty) {
+                        // Toast -- To notify in case Password is empty
+                        Toast.MakeText(this.BaseContext, "O campo Password tem de ser preenchido.", ToastLength.Short).Show();
+                    }
+                }
             };
-
+            
         }
     }
 }

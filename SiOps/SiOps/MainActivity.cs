@@ -7,7 +7,7 @@ using Android.Widget;
 using Android.OS;
 
 namespace SiOps {
-    [Activity(Label = "SiOps", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "SiOps")]
     public class MainActivity : Activity {
         int count = 1;
 

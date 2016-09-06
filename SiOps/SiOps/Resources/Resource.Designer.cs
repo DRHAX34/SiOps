@@ -60,8 +60,20 @@ namespace SiOps
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f050001
+			public const int MyButton = 2131034113;
+			
+			// aapt resource value: 0x7f050003
+			public const int btnColaboradores = 2131034115;
+			
 			// aapt resource value: 0x7f050000
-			public const int MyButton = 2131034112;
+			public const int btnLogin = 2131034112;
+			
+			// aapt resource value: 0x7f050004
+			public const int btnOperacoes = 2131034116;
+			
+			// aapt resource value: 0x7f050002
+			public const int lblMenu = 2131034114;
 			
 			static Id()
 			{
@@ -77,7 +89,31 @@ namespace SiOps
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int Colaboradores = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int DetalhesColaborador = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int DetalhesOperacao = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int EstatisticasColaborador = 2130903043;
+			
+			// aapt resource value: 0x7f030004
+			public const int EstatisticasOperacoes = 2130903044;
+			
+			// aapt resource value: 0x7f030005
+			public const int Login = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int Main = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int Menu = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int Operacoes = 2130903048;
 			
 			static Layout()
 			{

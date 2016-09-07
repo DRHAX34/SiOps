@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 
 namespace SiOps {
-    [Activity(Label = "MenuActivity")]
+    [Activity(Label = "Menu")]
     public class MenuActivity : Activity {
         protected override void OnCreate(Bundle bundle) {
             base.OnCreate(bundle);

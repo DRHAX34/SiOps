@@ -10,5 +10,13 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/listViewOperacoes" />
+        android:id="@+id/listViewOperacoes"
+        android:dividerHeight="2px"
+        android:textAlignment="center"
+        android:divider="@android:color/white"
+        style="@android:style/TextAppearance.Holo.Medium"
+        android:choiceMode="singleChoice"
+        android:fastScrollStyle="@android:drawable/ic_menu_sort_alphabetically"
+        android:fastScrollEnabled="true"
+        android:keepScreenOn="true" />
 </LinearLayout>

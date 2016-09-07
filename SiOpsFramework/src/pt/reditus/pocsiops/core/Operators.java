@@ -19,21 +19,21 @@ import javax.persistence.Table;
 public class Operators implements java.io.Serializable {
 
 	private int idOperator;
-	private Serializable name;
-	private Serializable photoPath;
-	private Serializable location;
+	private String name;
+	private String photoPath;
+	private String location;
 	private Set<OperatorOperation> operatorOperations = new HashSet<OperatorOperation>(0);
 
 	public Operators() {
 	}
 
-	public Operators(int idOperator, Serializable name, Serializable location) {
+	public Operators(int idOperator, String name, String location) {
 		this.idOperator = idOperator;
 		this.name = name;
 		this.location = location;
 	}
 
-	public Operators(int idOperator, Serializable name, Serializable photoPath, Serializable location,
+	public Operators(int idOperator, String name, String photoPath, String location,
 			Set<OperatorOperation> operatorOperations) {
 		this.idOperator = idOperator;
 		this.name = name;
@@ -54,29 +54,29 @@ public class Operators implements java.io.Serializable {
 	}
 
 	@Column(name = "NAME", nullable = false)
-	public Serializable getName() {
+	public String getName() {
 		return this.name;
 	}
 
-	public void setName(Serializable name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
 	@Column(name = "PHOTO_PATH")
-	public Serializable getPhotoPath() {
+	public String getPhotoPath() {
 		return this.photoPath;
 	}
 
-	public void setPhotoPath(Serializable photoPath) {
+	public void setPhotoPath(String photoPath) {
 		this.photoPath = photoPath;
 	}
 
 	@Column(name = "LOCATION", nullable = false)
-	public Serializable getLocation() {
+	public String getLocation() {
 		return this.location;
 	}
 
-	public void setLocation(Serializable location) {
+	public void setLocation(String location) {
 		this.location = location;
 	}
 

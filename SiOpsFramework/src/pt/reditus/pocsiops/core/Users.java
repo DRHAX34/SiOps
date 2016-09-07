@@ -15,13 +15,13 @@ import javax.persistence.Table;
 public class Users implements java.io.Serializable {
 
 	private int idUser;
-	private Serializable username;
-	private Serializable password;
+	private String username;
+	private String password;
 
 	public Users() {
 	}
 
-	public Users(int idUser, Serializable username, Serializable password) {
+	public Users(int idUser, String username, String password) {
 		this.idUser = idUser;
 		this.username = username;
 		this.password = password;
@@ -39,20 +39,20 @@ public class Users implements java.io.Serializable {
 	}
 
 	@Column(name = "USERNAME", nullable = false)
-	public Serializable getUsername() {
+	public String getUsername() {
 		return this.username;
 	}
 
-	public void setUsername(Serializable username) {
+	public void setUsername(String username) {
 		this.username = username;
 	}
 
 	@Column(name = "PASSWORD", nullable = false)
-	public Serializable getPassword() {
+	public String getPassword() {
 		return this.password;
 	}
 
-	public void setPassword(Serializable password) {
+	public void setPassword(String password) {
 		this.password = password;
 	}
 

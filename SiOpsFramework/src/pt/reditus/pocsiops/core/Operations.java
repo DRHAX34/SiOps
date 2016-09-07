@@ -19,21 +19,21 @@ import javax.persistence.Table;
 public class Operations implements java.io.Serializable {
 
 	private int idOperations;
-	private Serializable name;
+	private String name;
 	private int timeLimit;
-	private Serializable type;
+	private String type;
 	private Set<OperatorOperation> operatorOperations = new HashSet<OperatorOperation>(0);
 
 	public Operations() {
 	}
 
-	public Operations(int idOperations, Serializable name, int timeLimit) {
+	public Operations(int idOperations, String name, int timeLimit) {
 		this.idOperations = idOperations;
 		this.name = name;
 		this.timeLimit = timeLimit;
 	}
 
-	public Operations(int idOperations, Serializable name, int timeLimit, Serializable type,
+	public Operations(int idOperations, String name, int timeLimit, String type,
 			Set<OperatorOperation> operatorOperations) {
 		this.idOperations = idOperations;
 		this.name = name;
@@ -54,11 +54,11 @@ public class Operations implements java.io.Serializable {
 	}
 
 	@Column(name = "NAME", nullable = false)
-	public Serializable getName() {
+	public String getName() {
 		return this.name;
 	}
 
-	public void setName(Serializable name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
@@ -72,11 +72,11 @@ public class Operations implements java.io.Serializable {
 	}
 
 	@Column(name = "TYPE")
-	public Serializable getType() {
+	public String getType() {
 		return this.type;
 	}
 
-	public void setType(Serializable type) {
+	public void setType(String type) {
 		this.type = type;
 	}
 

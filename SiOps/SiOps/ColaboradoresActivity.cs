@@ -18,6 +18,21 @@ namespace SiOps {
 
             // Create your application here
             SetContentView(Resource.Layout.Colaboradores);
+
+            // Get objects from layout
+            ListView listColaboradores = FindViewById<ListView>(Resource.Id.listViewColaboradores);
+            
+            //Code
+            //TODO:Fill list
+            var itemsColaboradores = new List<string>() { "Colaborador A", "Colaborador B", "Colaborador C" };
+            var adapterColaboradores = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, itemsColaboradores);
+            listColaboradores.Adapter = adapterColaboradores;
+
+            //Code listview item click
+            listColaboradores.ItemClick += delegate {
+                //Go to ColaboradorDetalhes
+                StartActivity(typeof(DetalhesColaboradorActivity));
+            };
         }
     }
 }

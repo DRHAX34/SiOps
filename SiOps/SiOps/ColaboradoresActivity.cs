@@ -33,6 +33,7 @@ namespace SiOps {
                 //Go to ColaboradorDetalhes
                 StartActivity(typeof(DetalhesColaboradorActivity));
             };
+
         }
     }
 }

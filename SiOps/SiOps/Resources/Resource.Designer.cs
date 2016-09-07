@@ -78,6 +78,9 @@ namespace SiOps
 			// aapt resource value: 0x7f050000
 			public const int listViewColaboradores = 2131034112;
 			
+			// aapt resource value: 0x7f050008
+			public const int listViewOperacoes = 2131034120;
+			
 			// aapt resource value: 0x7f050002
 			public const int txtPassword = 2131034114;
 			

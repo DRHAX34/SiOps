@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM 
+    "classpath://org/hibernate/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2016 11:27:49 AM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="pt.reditus.pocsiops.core.OperatorOperation" table="OPERATOR_OPERATION" optimistic-lock="version">
+        <id name="idOperatorOperation" type="int">
+            <column name="ID_OPERATOR_OPERATION" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="operations" class="pt.reditus.pocsiops.core.Operations" fetch="select">
+            <column name="ID_OPERATION" not-null="true" />
+        </many-to-one>
+        <many-to-one name="operators" class="pt.reditus.pocsiops.core.Operators" fetch="select">
+            <column name="ID_OPERATOR" not-null="true" />
+        </many-to-one>
+        <many-to-one name="states" class="pt.reditus.pocsiops.core.States" fetch="select">
+            <column name="ID_STATE" not-null="true" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering SYSTEM 
+    "classpath://org/hibernate/hibernate-reverse-engineering-3.0.dtd">
+
+<hibernate-reverse-engineering>
+  <table-filter match-catalog="demo-POCSIOPS" match-schema="dbo" match-name="OPERATIONS"/>
+  <table-filter match-catalog="demo-POCSIOPS" match-schema="dbo" match-name="OPERATORS"/>
+  <table-filter match-catalog="demo-POCSIOPS" match-schema="dbo" match-name="OPERATOR_OPERATION"/>
+  <table-filter match-catalog="demo-POCSIOPS" match-schema="dbo" match-name="STATES"/>
+  <table-filter match-catalog="demo-POCSIOPS" match-schema="dbo" match-name="USERS"/>
+</hibernate-reverse-engineering>

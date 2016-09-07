@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM 
+    "classpath://org/hibernate/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2016 11:27:49 AM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="pt.reditus.pocsiops.core.Operations" table="OPERATIONS" optimistic-lock="version">
+        <id name="idOperations" type="int">
+            <column name="ID_OPERATIONS" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="serializable">
+            <column name="NAME" not-null="true" />
+        </property>
+        <property name="timeLimit" type="int">
+            <column name="TIME_LIMIT" not-null="true" />
+        </property>
+        <property name="type" type="serializable">
+            <column name="TYPE" />
+        </property>
+        <set name="operatorOperations" table="OPERATOR_OPERATION" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="ID_OPERATION" not-null="true" />
+            </key>
+            <one-to-many class="pt.reditus.pocsiops.core.OperatorOperation" />
+        </set>
+    </class>
+</hibernate-mapping>

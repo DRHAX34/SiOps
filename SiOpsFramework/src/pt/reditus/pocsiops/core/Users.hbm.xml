@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM 
+    "classpath://org/hibernate/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 7, 2016 11:27:49 AM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="pt.reditus.pocsiops.core.Users" table="USERS" optimistic-lock="version">
+        <id name="idUser" type="int">
+            <column name="ID_USER" />
+            <generator class="assigned" />
+        </id>
+        <property name="username" type="serializable">
+            <column name="USERNAME" not-null="true" />
+        </property>
+        <property name="password" type="serializable">
+            <column name="PASSWORD" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

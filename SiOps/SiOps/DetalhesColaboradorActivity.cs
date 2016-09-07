@@ -13,11 +13,21 @@ using Android.Widget;
 namespace SiOps {
     [Activity(Label = "DetalhesColaboradorActivity")]
     public class DetalhesColaboradorActivity : Activity {
+
         protected override void OnCreate(Bundle bundle) {
             base.OnCreate(bundle);
 
             // Create your application here
             SetContentView(Resource.Layout.DetalhesColaborador);
+            // Get objects from layout
+            ImageView imgPhoto = FindViewById<ImageView>(Resource.Id.imgPhoto);
+            TextView txtName = FindViewById<TextView>(Resource.Id.txtName);
+            TextView txtLocation = FindViewById<TextView>(Resource.Id.txtLocation);
+
+            // Set Objects
+            imgPhoto.SetImageResource(Resource.Drawable.smile);
+            txtName.Text = "Nome";
+            txtLocation.Text = "Localização";
         }
     }
 }

@@ -47,6 +47,9 @@ namespace SiOps
 			// aapt resource value: 0x7f020000
 			public const int Icon = 2130837504;
 			
+			// aapt resource value: 0x7f020001
+			public const int smile = 2130837505;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -60,32 +63,41 @@ namespace SiOps
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050004
-			public const int MyButton = 2131034116;
+			// aapt resource value: 0x7f050007
+			public const int MyButton = 2131034119;
+			
+			// aapt resource value: 0x7f050009
+			public const int btnColaboradores = 2131034121;
 			
 			// aapt resource value: 0x7f050006
-			public const int btnColaboradores = 2131034118;
+			public const int btnLogin = 2131034118;
 			
-			// aapt resource value: 0x7f050003
-			public const int btnLogin = 2131034115;
+			// aapt resource value: 0x7f05000a
+			public const int btnOperacoes = 2131034122;
 			
-			// aapt resource value: 0x7f050007
-			public const int btnOperacoes = 2131034119;
+			// aapt resource value: 0x7f050001
+			public const int imgPhoto = 2131034113;
 			
-			// aapt resource value: 0x7f050005
-			public const int lblMenu = 2131034117;
+			// aapt resource value: 0x7f050008
+			public const int lblMenu = 2131034120;
 			
 			// aapt resource value: 0x7f050000
 			public const int listViewColaboradores = 2131034112;
 			
-			// aapt resource value: 0x7f050008
-			public const int listViewOperacoes = 2131034120;
+			// aapt resource value: 0x7f05000b
+			public const int listViewOperacoes = 2131034123;
+			
+			// aapt resource value: 0x7f050003
+			public const int txtLocation = 2131034115;
 			
 			// aapt resource value: 0x7f050002
-			public const int txtPassword = 2131034114;
+			public const int txtName = 2131034114;
 			
-			// aapt resource value: 0x7f050001
-			public const int txtUser = 2131034113;
+			// aapt resource value: 0x7f050005
+			public const int txtPassword = 2131034117;
+			
+			// aapt resource value: 0x7f050004
+			public const int txtUser = 2131034116;
 			
 			static Id()
 			{

@@ -15,18 +15,21 @@ public final class R {
         public static final int smile=0x7f020001;
     }
     public static final class id {
-        public static final int MyButton=0x7f050007;
-        public static final int btnColaboradores=0x7f050009;
-        public static final int btnLogin=0x7f050006;
-        public static final int btnOperacoes=0x7f05000a;
+        public static final int MyButton=0x7f05000a;
+        public static final int btnColaboradores=0x7f05000c;
+        public static final int btnLogin=0x7f050009;
+        public static final int btnOperacoes=0x7f05000d;
         public static final int imgPhoto=0x7f050001;
-        public static final int lblMenu=0x7f050008;
+        public static final int lblMenu=0x7f05000b;
         public static final int listViewColaboradores=0x7f050000;
-        public static final int listViewOperacoes=0x7f05000b;
+        public static final int listViewOperacoes=0x7f05000e;
+        public static final int txtLimit=0x7f050005;
         public static final int txtLocation=0x7f050003;
         public static final int txtName=0x7f050002;
-        public static final int txtPassword=0x7f050005;
-        public static final int txtUser=0x7f050004;
+        public static final int txtNameOper=0x7f050004;
+        public static final int txtPassword=0x7f050008;
+        public static final int txtType=0x7f050006;
+        public static final int txtUser=0x7f050007;
     }
     public static final class layout {
         public static final int colaboradores=0x7f030000;

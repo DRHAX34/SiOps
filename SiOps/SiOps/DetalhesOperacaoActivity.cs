@@ -18,6 +18,15 @@ namespace SiOps {
 
             // Create your application here
             SetContentView(Resource.Layout.DetalhesOperacao);
+
+            // Get objects from layout
+            TextView txtNameOper = FindViewById<TextView>(Resource.Id.txtNameOper);
+            TextView txtLimit = FindViewById<TextView>(Resource.Id.txtLimit);
+            TextView txtType = FindViewById<TextView>(Resource.Id.txtType);
+            // Set Objects
+            txtNameOper.Text = "Operação";
+            txtLimit.Text = "0";
+            txtType.Text = "Tipo";
         }
     }
 }

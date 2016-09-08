@@ -34,7 +34,7 @@ namespace SiOps {
                 //Go to ColaboradorDetalhes and pass Colaborador name
                 var detColaborador = new Intent(this, typeof(DetalhesColaboradorActivity));
                 detColaborador.PutExtra("Nome", itemsColaboradores[e.Position]);
-                StartActivity(detColaborador);
+                StartActivity(detColaborador); 
             };
         }
     }

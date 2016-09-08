@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 
 namespace SiOps {
-    [Activity(Label = "LoginActivity", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "Iniciar sessão", MainLauncher = true, Icon = "@drawable/icon")]
     public class LoginActivity : Activity {
         protected override void OnCreate(Bundle bundle) {
             base.OnCreate(bundle);

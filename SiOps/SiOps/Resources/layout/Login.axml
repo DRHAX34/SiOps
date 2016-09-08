@@ -9,7 +9,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nome de utilizador"
-        android:id="@+id/txtUser" />
+        android:id="@+id/txtUser"
+        android:maxLines="1" />
     <EditText
         android:inputType="textPassword"
         android:layout_width="match_parent"

@@ -8,13 +8,13 @@
             <column name="ID_OPERATIONS" />
             <generator class="assigned" />
         </id>
-        <property name="name" type="serializable">
+        <property name="name" type="string">
             <column name="NAME" not-null="true" />
         </property>
         <property name="timeLimit" type="int">
             <column name="TIME_LIMIT" not-null="true" />
         </property>
-        <property name="type" type="serializable">
+        <property name="type" type="string">
             <column name="TYPE" />
         </property>
         <set name="operatorOperations" table="OPERATOR_OPERATION" inverse="true" lazy="true" fetch="select">

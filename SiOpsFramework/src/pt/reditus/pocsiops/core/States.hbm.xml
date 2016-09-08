@@ -8,10 +8,10 @@
             <column name="ID_STATE" />
             <generator class="assigned" />
         </id>
-        <property name="name" type="serializable">
+        <property name="name" type="string">
             <column name="NAME" not-null="true" />
         </property>
-        <property name="description" type="serializable">
+        <property name="description" type="string">
             <column name="DESCRIPTION" />
         </property>
         <set name="operatorOperations" table="OPERATOR_OPERATION" inverse="true" lazy="true" fetch="select">

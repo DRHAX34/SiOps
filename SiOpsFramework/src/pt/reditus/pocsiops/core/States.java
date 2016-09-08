@@ -19,19 +19,19 @@ import javax.persistence.Table;
 public class States implements java.io.Serializable {
 
 	private int idState;
-	private Serializable name;
-	private Serializable description;
+	private String name;
+	private String description;
 	private Set<OperatorOperation> operatorOperations = new HashSet<OperatorOperation>(0);
 
 	public States() {
 	}
 
-	public States(int idState, Serializable name) {
+	public States(int idState, String name) {
 		this.idState = idState;
 		this.name = name;
 	}
 
-	public States(int idState, Serializable name, Serializable description, Set<OperatorOperation> operatorOperations) {
+	public States(int idState, String name, String description, Set<OperatorOperation> operatorOperations) {
 		this.idState = idState;
 		this.name = name;
 		this.description = description;
@@ -50,20 +50,20 @@ public class States implements java.io.Serializable {
 	}
 
 	@Column(name = "NAME", nullable = false)
-	public Serializable getName() {
+	public String getName() {
 		return this.name;
 	}
 
-	public void setName(Serializable name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 
 	@Column(name = "DESCRIPTION")
-	public Serializable getDescription() {
+	public String getDescription() {
 		return this.description;
 	}
 
-	public void setDescription(Serializable description) {
+	public void setDescription(String description) {
 		this.description = description;
 	}
 

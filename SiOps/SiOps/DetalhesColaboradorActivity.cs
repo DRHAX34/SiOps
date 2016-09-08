@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 
 namespace SiOps {
-    [Activity(Label = "DetalhesColaboradorActivity")]
+    [Activity(Label = "Detalhes do Colaborador")]
     public class DetalhesColaboradorActivity : Activity {
         protected override void OnCreate(Bundle bundle) {
             base.OnCreate(bundle);

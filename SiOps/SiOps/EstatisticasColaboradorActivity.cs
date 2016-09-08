@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 
 namespace SiOps {
-    [Activity(Label = "EstatisticasColaboradorActivity")]
+    [Activity(Label = "Estatisticas do Colaborador")]
     public class EstatisticasColaboradorActivity : Activity {
         protected override void OnCreate(Bundle bundle) {
             base.OnCreate(bundle);

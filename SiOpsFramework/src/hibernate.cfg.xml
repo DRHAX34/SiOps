@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-configuration SYSTEM 
     "classpath://org/hibernate/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
-    <session-factor>
+    <session-factory>
         <!--<property name="hibernate.connection.driver_class">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
         <property name="hibernate.connection.password">pocsiops</property>
         <property name="hibernate.connection.url">jdbc:sqlserver://192.168.61.70;databaseName=demo-POCSIOPS;selectMethod=cursor</property>
@@ -16,10 +16,11 @@
         <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
         <property name="hibernate.search.autoregister_listeners">false</property>
         <property name="hibernate.validator.apply_to_ddl">false</property>
-        <mapping class="pt.reditus.pocsiops.core.States" />
-        <mapping class="pt.reditus.pocsiops.core.OperatorOperation" />
-        <mapping class="pt.reditus.pocsiops.core.Operators" />
-        <mapping class="pt.reditus.pocsiops.core.Operations" />
-        <mapping class="pt.reditus.pocsiops.core.Users" />
+        
+        <mapping resource="pt/reditus/pocsiops/core/States.hbm.xml" />
+        <mapping resource="pt/reditus/pocsiops/core/OperatorOperation.hbm.xml" />
+        <mapping resource="pt/reditus/pocsiops/core/Operators.hbm.xml" />
+        <mapping resource="pt/reditus/pocsiops/core/Operations.hbm.xml" />
+        <mapping resource="pt/reditus/pocsiops/core/Users.hbm.xml" />
     </session-factory>
 </hibernate-configuration>

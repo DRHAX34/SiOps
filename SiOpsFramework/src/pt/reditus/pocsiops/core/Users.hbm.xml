@@ -8,10 +8,10 @@
             <column name="ID_USER" />
             <generator class="assigned" />
         </id>
-        <property name="username" type="serializable">
+        <property name="username" type="string">
             <column name="USERNAME" not-null="true" />
         </property>
-        <property name="password" type="serializable">
+        <property name="password" type="string">
             <column name="PASSWORD" not-null="true" />
         </property>
     </class>

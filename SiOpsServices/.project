@@ -3,6 +3,7 @@
 	<name>SiOpsServices</name>
 	<comment></comment>
 	<projects>
+		<project>SiOpsFramework</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -26,7 +26,7 @@ namespace SiOps {
             // Set Objects
             imgPhoto.SetImageResource(Resource.Drawable.smile);
             txtName.Text = Intent.GetStringExtra("Nome") ?? "Não disponivel";
-            txtLocation.Text = "Localização";
+            txtLocation.Text = "Localização Colaborador";
         }
     }
 }

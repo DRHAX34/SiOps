@@ -11,7 +11,7 @@ using Android.Views;
 using Android.Widget;
 
 namespace SiOps {
-    [Activity(Label = "Colaboradores")]
+    [Activity(Label = "ColaboradoresActivity")]
     public class ColaboradoresActivity : Activity {
         protected override void OnCreate(Bundle bundle) {
             base.OnCreate(bundle);
@@ -24,18 +24,18 @@ namespace SiOps {
             
             //Code
             //TODO:Fill list
-            var itemsColaboradores = new List<string>() { "Colaborador A", "Colaborador C", "Colaborador B", "A", "C", "D", "B" };
+            var itemsColaboradores = new List<string>() { "Colaborador A", "Colaborador B", "Colaborador C" };
             var adapterColaboradores = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, itemsColaboradores);
             listColaboradores.Adapter = adapterColaboradores;
 
             //Code listview item click
-            listColaboradores.ItemClick += delegate {
-                
+            listColaboradores.ItemClick += (s, e) =>
+            {
                 //Go to ColaboradorDetalhes
-                //TODO: Pass Selected user
-                StartActivity(typeof(DetalhesColaboradorActivity));
+                var detColaborador = new Intent(this, typeof(DetalhesColaboradorActivity));
+                detColaborador.PutExtra("Nome", itemsColaboradores[e.Position]);
+                StartActivity(detColaborador);
             };
-
         }
     }
 }

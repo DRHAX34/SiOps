@@ -12,7 +12,6 @@
         android:layout_height="match_parent"
         android:id="@+id/listViewColaboradores"
         android:dividerHeight="2px"
-        android:textAlignment="center"
         android:divider="@android:color/white"
         style="@android:style/TextAppearance.Holo.Medium"
         android:choiceMode="singleChoice"

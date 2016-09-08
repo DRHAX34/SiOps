@@ -65,4 +65,3 @@ C:\Users\Administrator\Documents\GitHubVisualStudio\SiOps\SiOps\SiOps\obj\Debug\
 C:\Users\Administrator\Documents\GitHubVisualStudio\SiOps\SiOps\SiOps\obj\Debug\res\drawable\smile.png
 C:\Users\Administrator\Documents\GitHubVisualStudio\SiOps\SiOps\SiOps\obj\Debug\R.cs.flag
 C:\Users\Administrator\Documents\GitHubVisualStudio\SiOps\SiOps\SiOps\obj\Debug\uploadflags.txt
-C:\Users\Administrator\Documents\GitHubVisualStudio\SiOps\SiOps\SiOps\obj\Debug\SiOps.csprojResolveAssemblyReference.cache

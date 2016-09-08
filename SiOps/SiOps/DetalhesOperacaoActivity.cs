@@ -24,7 +24,7 @@ namespace SiOps {
             TextView txtLimit = FindViewById<TextView>(Resource.Id.txtLimit);
             TextView txtType = FindViewById<TextView>(Resource.Id.txtType);
             // Set Objects
-            txtNameOper.Text = "Operação";
+            txtNameOper.Text = Intent.GetStringExtra("Nome") ?? "Não disponivel";
             txtLimit.Text = "0";
             txtType.Text = "Tipo";
         }

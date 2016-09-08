@@ -28,9 +28,12 @@ namespace SiOps {
             listOperacoes.Adapter = adapterOperacoes;
 
             //Code listview item click
-            listOperacoes.ItemClick += delegate {
-                //Go to ColaboradorDetalhes
-                StartActivity(typeof(DetalhesOperacaoActivity));
+            listOperacoes.ItemClick += (s, e) =>
+            {
+                //Go to ColaboradorDetalhes and pass Colaborador name
+                var detOperacao = new Intent(this, typeof(DetalhesOperacaoActivity));
+                detOperacao.PutExtra("Nome", itemsOperacoes[e.Position]);
+                StartActivity(detOperacao);
             };
 
         }

@@ -31,7 +31,7 @@ namespace SiOps {
             //Code listview item click
             listColaboradores.ItemClick += (s, e) =>
             {
-                //Go to ColaboradorDetalhes
+                //Go to ColaboradorDetalhes and pass Colaborador name
                 var detColaborador = new Intent(this, typeof(DetalhesColaboradorActivity));
                 detColaborador.PutExtra("Nome", itemsColaboradores[e.Position]);
                 StartActivity(detColaborador);

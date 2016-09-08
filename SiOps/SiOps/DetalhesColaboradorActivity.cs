@@ -13,7 +13,6 @@ using Android.Widget;
 namespace SiOps {
     [Activity(Label = "DetalhesColaboradorActivity")]
     public class DetalhesColaboradorActivity : Activity {
-
         protected override void OnCreate(Bundle bundle) {
             base.OnCreate(bundle);
 
@@ -26,7 +25,7 @@ namespace SiOps {
 
             // Set Objects
             imgPhoto.SetImageResource(Resource.Drawable.smile);
-            txtName.Text = "Nome";
+            txtName.Text = Intent.GetStringExtra("Nome") ?? "Não disponivel";
             txtLocation.Text = "Localização";
         }
     }

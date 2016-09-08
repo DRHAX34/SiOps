@@ -43,5 +43,6 @@ C:\Users\Nuno\Desktop\Trabalho\Xamarin\SiOps\SiOps\SiOps\obj\Debug\android\asset
 C:\Users\Nuno\Desktop\Trabalho\Xamarin\SiOps\SiOps\SiOps\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
 C:\Users\Nuno\Desktop\Trabalho\Xamarin\SiOps\SiOps\SiOps\obj\Debug\android\assets\System.Xml.dll.mdb
 C:\Users\Nuno\Desktop\Trabalho\Xamarin\SiOps\SiOps\SiOps\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\Nuno\Desktop\Trabalho\Xamarin\SiOps\SiOps\SiOps\obj\Debug\SiOps.csprojResolveAssemblyReference.cache
 C:\Users\Nuno\Desktop\Trabalho\Xamarin\SiOps\SiOps\SiOps\obj\Debug\SiOps.dll.mdb
 C:\Users\Nuno\Desktop\Trabalho\Xamarin\SiOps\SiOps\SiOps\bin\Debug\SiOps.dll.mdb

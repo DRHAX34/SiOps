@@ -29,11 +29,13 @@ namespace SiOps {
             listColaboradores.Adapter = adapterColaboradores;
 
             //Code listview item click
-            listColaboradores.ItemClick += delegate {
+            listColaboradores.ItemClick += (s, e) =>
+            {
                 //Go to ColaboradorDetalhes
-                StartActivity(typeof(DetalhesColaboradorActivity));
+                var detColaborador = new Intent(this, typeof(DetalhesColaboradorActivity));
+                detColaborador.PutExtra("Nome", itemsColaboradores[e.Position]);
+                StartActivity(detColaborador);
             };
-
         }
     }
 }
